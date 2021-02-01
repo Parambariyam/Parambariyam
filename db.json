@@ -1,0 +1,39 @@
+{
+    "locations" : [{
+        "link": "https://goo.gl/maps/2X9wd3pKePFXLKom7",
+        "hub": "Salem",
+        "child": "Salem (Salem Main HUB)",
+        "Address": "5/13A, Bangalore Bypass Road, Near Gokulam Specialty Hospital Salem",
+        "phone": "9025404477"
+    }, {
+        "link": "https://goo.gl/maps/2X9wd3pKePFXLKom7",
+        "hub": "Salem",
+        "child": "Salem (Kondalampatti)",
+        "Address": "373/1, Bangalore Bye Pass Road Salem",
+        "phone": "6379301285"
+    }, {
+        "link": "https://goo.gl/maps/2X9wd3pKePFXLKom7",
+        "hub": "Salem",
+        "child": "Mettur (Mettur Dam)",
+        "Address": "No.3.Pillayar Kovil Tharu,Near Appasara theater,Gugi Salem",
+        "phone": "9025404477"
+    }, {
+        "link": "https://goo.gl/maps/2X9wd3pKePFXLKom7",
+        "hub": "Trichy",
+        "child": "Mettur (Mettur Dam)",
+        "Address": "No.3.Pillayar Kovil Tharu,Near Appasara theater,Gugi Salem",
+        "phone": "9025404477"
+    }, {
+        "link": "https://goo.gl/maps/2X9wd3pKePFXLKom7",
+        "hub": "Trichy",
+        "child": "Mettur (Mettur Dam)",
+        "Address": "No.3.Pillayar Kovil Tharu,Near Appasara theater,Gugi Salem",
+        "phone": "9025404477"
+    }, {
+        "link": "https://goo.gl/maps/2X9wd3pKePFXLKom7",
+        "hub": "Trichy",
+        "child": "Mettur (Mettur Dam)",
+        "Address": "No.3.Pillayar Kovil Tharu,Near Appasara theater,Gugi Salem",
+        "phone": "9025404477"
+    }]
+}
