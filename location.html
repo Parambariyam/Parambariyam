@@ -178,25 +178,34 @@
 		let getLocations = async ()=>{
 			let locationData = await fetch('https://my-json-server.typicode.com/Parambariyam/Parambariyam/locations');
 			locations = await locationData.json();
-
+			 
 			if(locations && locations.length > 0){
-				
+				let html = '';
+				html = html + '<div class="col-md-12 locDiv">';
+
 				for(let j=0;j<locations.length;j++){
 					let loc = locations[j];
-					let address = loc.Address || "";
-					let html = '' +
-					'<div id="loc" class="col-md-3">' + 
-						'<div class="icon d-flex align-items-center justify-content-center">'+
-						'<span class="fa fa-map-marker"></span>' + 
-						'</div>' + 
-						'<div class="text">' +
-							'<p><span>Address:</span>'+ address + '</p>' +
+					html = html + '<h3 class="text-center">' + loc.location  +  '</h3>';
+					html = html + '<div class="row">';
+					for(let k=0;k<loc.sub_locations.length;k++){
+						let sub_loc = loc.sub_locations[k];
+						let address = sub_loc.Address || "";
+						html = html + 
+						'<div id="loc" class="col-md-3">' + 
+							'<div class="icon d-flex align-items-center justify-content-center">'+
+							'<span class="fa fa-map-marker"></span>' + 
+							'</div>' + 
+							'<div class="text">' +
+								'<p><span>Address:</span>'+ address + '</p>' +
+							'</div>'+
 						'</div>';
-					'</div>';
-					html = new DOMParser().parseFromString(html, "text/html");
-					html = html.documentElement.querySelectorAll('div')
-					document.getElementById('locations').append(html[0]);
+					}
+					html = html + '</div>';
 				}
+				html = html + '</div><br><br>';
+				html = new DOMParser().parseFromString(html, "text/html");
+				html = html.documentElement.querySelectorAll('div')
+				document.getElementById('locations').append(html[0]);
 			}
 		}
 		getLocations();
