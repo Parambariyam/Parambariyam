@@ -9964,3 +9964,45 @@ textarea.form-control {
 .imageDiv{
   height: 200px;
 }
+
+.whats-app{
+	position:fixed;
+	width:35px;
+	height:37px;
+	bottom:18px;
+	right:20px;
+	background-color:#25d366;
+	color:#FFF;
+	border-radius:50px;
+	text-align:center;
+  font-size:23px;
+  z-index:100;
+}
+
+.face-book{
+  position:fixed;
+	width:35px;
+	height:37px;
+	bottom:18px;
+	right:65px;
+	background-color:#43609c;
+	color:#FFF;
+	border-radius:50px;
+	text-align:center;
+  font-size:23px;
+  z-index:100;
+}
+
+.insta-gram{
+  position:fixed;
+	width:35px;
+	height:37px;
+	bottom:18px;
+	right:110px;
+	background-color:#be1c1c;
+	color:#FFF;
+	border-radius:50px;
+	text-align:center;
+  font-size:23px;
+  z-index:100;
+}
